@@ -16,4 +16,11 @@ final class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func didChangeValueOfSliderBar(_ sender: UISlider) {
+        UIView.animate(withDuration: 0.5) {
+            NSLayoutConstraint.updateMultiplier(of: &self.graphHeightConstraint, CGFloat(sender.value))
+            self.view.layoutIfNeeded()
+        }
+    }
 }

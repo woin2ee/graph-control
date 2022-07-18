@@ -35,6 +35,9 @@
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="zx5-KW-NYo">
                                 <rect key="frame" x="18" y="782" width="298" height="31"/>
+                                <connections>
+                                    <action selector="didChangeValueOfSliderBar:" destination="BYZ-38-t0r" eventType="valueChanged" id="OqJ-Qo-yd4"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
