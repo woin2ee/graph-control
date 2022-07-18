@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		273B911A48CC1627B667201E /* Pods_GraphControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1888328DA139BC133F2C07 /* Pods_GraphControl.framework */; };
 		E800392428853AD100D1EEA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E800392328853AD100D1EEA1 /* AppDelegate.swift */; };
 		E800392628853AD100D1EEA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E800392528853AD100D1EEA1 /* SceneDelegate.swift */; };
 		E800392828853AD100D1EEA1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E800392728853AD100D1EEA1 /* MainViewController.swift */; };
@@ -18,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A1888328DA139BC133F2C07 /* Pods_GraphControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GraphControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BEEC8433AFC847840A53C04 /* Pods-GraphControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphControl.release.xcconfig"; path = "Target Support Files/Pods-GraphControl/Pods-GraphControl.release.xcconfig"; sourceTree = "<group>"; };
+		DDB64CEBDBB18779BDEB1598 /* Pods-GraphControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphControl.debug.xcconfig"; path = "Target Support Files/Pods-GraphControl/Pods-GraphControl.debug.xcconfig"; sourceTree = "<group>"; };
 		E800392028853AD100D1EEA1 /* GraphControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E800392328853AD100D1EEA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E800392528853AD100D1EEA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,17 +39,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273B911A48CC1627B667201E /* Pods_GraphControl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7FE8B7D55C6948911CC17920 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDB64CEBDBB18779BDEB1598 /* Pods-GraphControl.debug.xcconfig */,
+				1BEEC8433AFC847840A53C04 /* Pods-GraphControl.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E800391728853AD100D1EEA1 = {
 			isa = PBXGroup;
 			children = (
 				E800392228853AD100D1EEA1 /* GraphControl */,
 				E800392128853AD100D1EEA1 /* Products */,
+				7FE8B7D55C6948911CC17920 /* Pods */,
+				E800FAFD67A2D64D0CB197CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +122,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		E800FAFD67A2D64D0CB197CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A1888328DA139BC133F2C07 /* Pods_GraphControl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E800393428853AD500D1EEA1 /* Build configuration list for PBXNativeTarget "GraphControl" */;
 			buildPhases = (
+				7DE120D2E6C73108D1501DD7 /* [CP] Check Pods Manifest.lock */,
 				E800391C28853AD100D1EEA1 /* Sources */,
 				E800391D28853AD100D1EEA1 /* Frameworks */,
 				E800391E28853AD100D1EEA1 /* Resources */,
+				5650C47E41781856E4150F78 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,6 +197,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5650C47E41781856E4150F78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GraphControl/Pods-GraphControl-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GraphControl/Pods-GraphControl-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GraphControl/Pods-GraphControl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DE120D2E6C73108D1501DD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GraphControl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E800391C28853AD100D1EEA1 /* Sources */ = {
@@ -322,6 +391,7 @@
 		};
 		E800393528853AD500D1EEA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDB64CEBDBB18779BDEB1598 /* Pods-GraphControl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -351,6 +421,7 @@
 		};
 		E800393628853AD500D1EEA1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BEEC8433AFC847840A53C04 /* Pods-GraphControl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
