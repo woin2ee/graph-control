@@ -20,7 +20,7 @@
                                 <rect key="frame" x="334" y="64" width="60" height="778"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K7d-om-Kps">
-                                        <rect key="frame" x="0.0" y="389" width="60" height="389"/>
+                                        <rect key="frame" x="0.0" y="544.5" width="60" height="233.5"/>
                                         <color key="backgroundColor" red="0.9157484951" green="0.69904627090000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
@@ -29,7 +29,7 @@
                                     <constraint firstAttribute="bottom" secondItem="K7d-om-Kps" secondAttribute="bottom" id="17I-T5-rCq"/>
                                     <constraint firstAttribute="trailing" secondItem="K7d-om-Kps" secondAttribute="trailing" id="34e-g2-xbC"/>
                                     <constraint firstAttribute="width" constant="60" id="HbF-R3-Vzf"/>
-                                    <constraint firstItem="K7d-om-Kps" firstAttribute="height" secondItem="IxY-L6-01X" secondAttribute="height" multiplier="0.5" id="eZQ-AC-lX3"/>
+                                    <constraint firstItem="K7d-om-Kps" firstAttribute="height" secondItem="IxY-L6-01X" secondAttribute="height" multiplier="0.3" id="eZQ-AC-lX3"/>
                                     <constraint firstItem="K7d-om-Kps" firstAttribute="leading" secondItem="IxY-L6-01X" secondAttribute="leading" id="pIF-Gc-50W"/>
                                 </constraints>
                             </view>
@@ -52,6 +52,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="graphContainerView" destination="IxY-L6-01X" id="vG8-Cg-7KP"/>
                         <outlet property="graphHeightConstraint" destination="eZQ-AC-lX3" id="RE8-gK-51p"/>
                         <outlet property="sliderBar" destination="zx5-KW-NYo" id="pee-d8-hTO"/>
                     </connections>

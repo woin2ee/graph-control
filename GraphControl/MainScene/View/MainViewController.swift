@@ -9,8 +9,13 @@ import UIKit
 
 final class MainViewController: UIViewController {
     
-    @IBOutlet weak var sliderBar: UISlider!
+    @IBOutlet weak var sliderBar: UISlider! {
+        didSet {
+            sliderBar.minimumValue = 0.00001
+        }
+    }
     
+    @IBOutlet weak var graphContainerView: UIView!
     @IBOutlet weak var graphHeightConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
@@ -18,9 +23,14 @@ final class MainViewController: UIViewController {
     }
     
     @IBAction func didChangeValueOfSliderBar(_ sender: UISlider) {
+        viewAnimation(value: CGFloat(sender.value))
+        print(self.graphHeightConstraint.multiplier)
+    }
+    
+    func viewAnimation(value: CGFloat) {
         UIView.animate(withDuration: 0.5) {
-            NSLayoutConstraint.updateMultiplier(of: &self.graphHeightConstraint, CGFloat(sender.value))
-            self.view.layoutIfNeeded()
+            NSLayoutConstraint.updateMultiplier(of: &self.graphHeightConstraint, value)
+            self.graphContainerView.layoutIfNeeded()
         }
     }
 }
