@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E800392428853AD100D1EEA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E800392328853AD100D1EEA1 /* AppDelegate.swift */; };
 		E800392628853AD100D1EEA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E800392528853AD100D1EEA1 /* SceneDelegate.swift */; };
-		E800392828853AD100D1EEA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E800392728853AD100D1EEA1 /* ViewController.swift */; };
+		E800392828853AD100D1EEA1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E800392728853AD100D1EEA1 /* MainViewController.swift */; };
 		E800392B28853AD100D1EEA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E800392928853AD100D1EEA1 /* Main.storyboard */; };
 		E800392D28853AD500D1EEA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E800392C28853AD500D1EEA1 /* Assets.xcassets */; };
 		E800393028853AD500D1EEA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E800392E28853AD500D1EEA1 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		E800392028853AD100D1EEA1 /* GraphControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E800392328853AD100D1EEA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E800392528853AD100D1EEA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E800392728853AD100D1EEA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E800392728853AD100D1EEA1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E800392A28853AD100D1EEA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E800392C28853AD500D1EEA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E800392F28853AD500D1EEA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,13 +58,37 @@
 			children = (
 				E800392328853AD100D1EEA1 /* AppDelegate.swift */,
 				E800392528853AD100D1EEA1 /* SceneDelegate.swift */,
-				E800392728853AD100D1EEA1 /* ViewController.swift */,
-				E800392928853AD100D1EEA1 /* Main.storyboard */,
+				E800393728853B5F00D1EEA1 /* MainScene */,
 				E800392C28853AD500D1EEA1 /* Assets.xcassets */,
 				E800392E28853AD500D1EEA1 /* LaunchScreen.storyboard */,
 				E800393128853AD500D1EEA1 /* Info.plist */,
 			);
 			path = GraphControl;
+			sourceTree = "<group>";
+		};
+		E800393728853B5F00D1EEA1 /* MainScene */ = {
+			isa = PBXGroup;
+			children = (
+				E800393828853B6400D1EEA1 /* View */,
+				E800393928853B6C00D1EEA1 /* ViewModel */,
+			);
+			path = MainScene;
+			sourceTree = "<group>";
+		};
+		E800393828853B6400D1EEA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E800392728853AD100D1EEA1 /* MainViewController.swift */,
+				E800392928853AD100D1EEA1 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E800393928853B6C00D1EEA1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E800392828853AD100D1EEA1 /* ViewController.swift in Sources */,
+				E800392828853AD100D1EEA1 /* MainViewController.swift in Sources */,
 				E800392428853AD100D1EEA1 /* AppDelegate.swift in Sources */,
 				E800392628853AD100D1EEA1 /* SceneDelegate.swift in Sources */,
 			);
