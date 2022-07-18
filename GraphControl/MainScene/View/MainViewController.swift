@@ -9,6 +9,8 @@ import UIKit
 
 final class MainViewController: UIViewController {
     
+    private var viewModel: MainViewModel = MainViewModel()
+    
     @IBOutlet weak var sliderBar: UISlider! {
         didSet {
             sliderBar.minimumValue = 0.00001
