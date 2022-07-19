@@ -52,7 +52,6 @@
 				DDB64CEBDBB18779BDEB1598 /* Pods-GraphControl.debug.xcconfig */,
 				1BEEC8433AFC847840A53C04 /* Pods-GraphControl.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
