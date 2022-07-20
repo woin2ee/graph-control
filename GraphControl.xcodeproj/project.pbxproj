@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14D3CE288CD16DB448A02001 /* Pods_GraphControl_GraphControlTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438E36F61623B524FFC07344 /* Pods_GraphControl_GraphControlTests.framework */; };
 		273B911A48CC1627B667201E /* Pods_GraphControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1888328DA139BC133F2C07 /* Pods_GraphControl.framework */; };
 		E800392428853AD100D1EEA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E800392328853AD100D1EEA1 /* AppDelegate.swift */; };
 		E800392628853AD100D1EEA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E800392528853AD100D1EEA1 /* SceneDelegate.swift */; };
@@ -16,13 +17,27 @@
 		E800393028853AD500D1EEA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E800392E28853AD500D1EEA1 /* LaunchScreen.storyboard */; };
 		E800393C288542C700D1EEA1 /* NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E800393B288542C700D1EEA1 /* NSLayoutConstraint.swift */; };
 		E800393E2885564800D1EEA1 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E800393D2885564700D1EEA1 /* MainViewModel.swift */; };
-		E8F3DF182887F79F00E8BF61 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F3DF172887F79F00E8BF61 /* ViewModelType.swift */; };
 		E800394528858F3100D1EEA1 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = E800394428858F3100D1EEA1 /* Graph.swift */; };
+		E8F3DF182887F79F00E8BF61 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F3DF172887F79F00E8BF61 /* ViewModelType.swift */; };
+		E8F3DF20288812B400E8BF61 /* MainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F3DF1F288812B400E8BF61 /* MainViewModelTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8F3DF21288812B400E8BF61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E800391828853AD100D1EEA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E800391F28853AD100D1EEA1;
+			remoteInfo = GraphControl;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0A1888328DA139BC133F2C07 /* Pods_GraphControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GraphControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BEEC8433AFC847840A53C04 /* Pods-GraphControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphControl.release.xcconfig"; path = "Target Support Files/Pods-GraphControl/Pods-GraphControl.release.xcconfig"; sourceTree = "<group>"; };
+		30D19BB68286ECC885CE2D1B /* Pods-GraphControl-GraphControlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphControl-GraphControlTests.release.xcconfig"; path = "Target Support Files/Pods-GraphControl-GraphControlTests/Pods-GraphControl-GraphControlTests.release.xcconfig"; sourceTree = "<group>"; };
+		438E36F61623B524FFC07344 /* Pods_GraphControl_GraphControlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GraphControl_GraphControlTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62EF2FE6848701157A9EEE0 /* Pods-GraphControl-GraphControlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphControl-GraphControlTests.debug.xcconfig"; path = "Target Support Files/Pods-GraphControl-GraphControlTests/Pods-GraphControl-GraphControlTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DDB64CEBDBB18779BDEB1598 /* Pods-GraphControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraphControl.debug.xcconfig"; path = "Target Support Files/Pods-GraphControl/Pods-GraphControl.debug.xcconfig"; sourceTree = "<group>"; };
 		E800392028853AD100D1EEA1 /* GraphControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E800392328853AD100D1EEA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,8 +49,10 @@
 		E800393128853AD500D1EEA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E800393B288542C700D1EEA1 /* NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint.swift; sourceTree = "<group>"; };
 		E800393D2885564700D1EEA1 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		E8F3DF172887F79F00E8BF61 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		E800394428858F3100D1EEA1 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		E8F3DF172887F79F00E8BF61 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		E8F3DF1D288812B400E8BF61 /* GraphControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8F3DF1F288812B400E8BF61 /* MainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +64,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8F3DF1A288812B400E8BF61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14D3CE288CD16DB448A02001 /* Pods_GraphControl_GraphControlTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +80,8 @@
 			children = (
 				DDB64CEBDBB18779BDEB1598 /* Pods-GraphControl.debug.xcconfig */,
 				1BEEC8433AFC847840A53C04 /* Pods-GraphControl.release.xcconfig */,
+				B62EF2FE6848701157A9EEE0 /* Pods-GraphControl-GraphControlTests.debug.xcconfig */,
+				30D19BB68286ECC885CE2D1B /* Pods-GraphControl-GraphControlTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -63,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				E800392228853AD100D1EEA1 /* GraphControl */,
+				E8F3DF1E288812B400E8BF61 /* GraphControlTests */,
 				E800392128853AD100D1EEA1 /* Products */,
 				7FE8B7D55C6948911CC17920 /* Pods */,
 				E800FAFD67A2D64D0CB197CF /* Frameworks */,
@@ -73,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				E800392028853AD100D1EEA1 /* GraphControl.app */,
+				E8F3DF1D288812B400E8BF61 /* GraphControlTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				0A1888328DA139BC133F2C07 /* Pods_GraphControl.framework */,
+				438E36F61623B524FFC07344 /* Pods_GraphControl_GraphControlTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -157,6 +187,14 @@
 				E800393928853B6C00D1EEA1 /* ViewModel */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		E8F3DF1E288812B400E8BF61 /* GraphControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8F3DF1F288812B400E8BF61 /* MainViewModelTests.swift */,
+			);
+			path = GraphControlTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +219,26 @@
 			productReference = E800392028853AD100D1EEA1 /* GraphControl.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E8F3DF1C288812B400E8BF61 /* GraphControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8F3DF25288812B400E8BF61 /* Build configuration list for PBXNativeTarget "GraphControlTests" */;
+			buildPhases = (
+				9733A56CDA3EF630B710AAB3 /* [CP] Check Pods Manifest.lock */,
+				E8F3DF19288812B400E8BF61 /* Sources */,
+				E8F3DF1A288812B400E8BF61 /* Frameworks */,
+				E8F3DF1B288812B400E8BF61 /* Resources */,
+				9942DE1087D87901D69B18F8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8F3DF22288812B400E8BF61 /* PBXTargetDependency */,
+			);
+			name = GraphControlTests;
+			productName = GraphControlTests;
+			productReference = E8F3DF1D288812B400E8BF61 /* GraphControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,6 +251,10 @@
 				TargetAttributes = {
 					E800391F28853AD100D1EEA1 = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					E8F3DF1C288812B400E8BF61 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = E800391F28853AD100D1EEA1;
 					};
 				};
 			};
@@ -210,6 +272,7 @@
 			projectRoot = "";
 			targets = (
 				E800391F28853AD100D1EEA1 /* GraphControl */,
+				E8F3DF1C288812B400E8BF61 /* GraphControlTests */,
 			);
 		};
 /* End PBXProject section */
@@ -222,6 +285,13 @@
 				E800393028853AD500D1EEA1 /* LaunchScreen.storyboard in Resources */,
 				E800392D28853AD500D1EEA1 /* Assets.xcassets in Resources */,
 				E800392B28853AD100D1EEA1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8F3DF1B288812B400E8BF61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +337,45 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9733A56CDA3EF630B710AAB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GraphControl-GraphControlTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9942DE1087D87901D69B18F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GraphControl-GraphControlTests/Pods-GraphControl-GraphControlTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GraphControl-GraphControlTests/Pods-GraphControl-GraphControlTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GraphControl-GraphControlTests/Pods-GraphControl-GraphControlTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -284,7 +393,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8F3DF19288812B400E8BF61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8F3DF20288812B400E8BF61 /* MainViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8F3DF22288812B400E8BF61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E800391F28853AD100D1EEA1 /* GraphControl */;
+			targetProxy = E8F3DF21288812B400E8BF61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E800392928853AD100D1EEA1 /* Main.storyboard */ = {
@@ -480,6 +605,46 @@
 			};
 			name = Release;
 		};
+		E8F3DF23288812B400E8BF61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B62EF2FE6848701157A9EEE0 /* Pods-GraphControl-GraphControlTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2AVC8X7323;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = woin2ee.GraphControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GraphControl.app/GraphControl";
+			};
+			name = Debug;
+		};
+		E8F3DF24288812B400E8BF61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30D19BB68286ECC885CE2D1B /* Pods-GraphControl-GraphControlTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2AVC8X7323;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = woin2ee.GraphControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GraphControl.app/GraphControl";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -497,6 +662,15 @@
 			buildConfigurations = (
 				E800393528853AD500D1EEA1 /* Debug */,
 				E800393628853AD500D1EEA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8F3DF25288812B400E8BF61 /* Build configuration list for PBXNativeTarget "GraphControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8F3DF23288812B400E8BF61 /* Debug */,
+				E8F3DF24288812B400E8BF61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
