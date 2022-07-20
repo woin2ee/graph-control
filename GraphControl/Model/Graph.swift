@@ -8,7 +8,7 @@
 import Foundation
 
 struct Graph {
-    let minValue = 0
-    let maxValue = 100
-    var currentValue: Double
+    static let minValue = 0
+    static let maxValue = 100
+    var value: Double
 }
