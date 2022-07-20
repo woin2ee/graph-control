@@ -17,6 +17,7 @@
 		E800393C288542C700D1EEA1 /* NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E800393B288542C700D1EEA1 /* NSLayoutConstraint.swift */; };
 		E800393E2885564800D1EEA1 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E800393D2885564700D1EEA1 /* MainViewModel.swift */; };
 		E8F3DF182887F79F00E8BF61 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F3DF172887F79F00E8BF61 /* ViewModelType.swift */; };
+		E800394528858F3100D1EEA1 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = E800394428858F3100D1EEA1 /* Graph.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		E800393B288542C700D1EEA1 /* NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint.swift; sourceTree = "<group>"; };
 		E800393D2885564700D1EEA1 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		E8F3DF172887F79F00E8BF61 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		E800394428858F3100D1EEA1 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				E800392528853AD100D1EEA1 /* SceneDelegate.swift */,
 				E800393A28853E0500D1EEA1 /* Extensions */,
 				E800393728853B5F00D1EEA1 /* Scenes */,
+				E800394328858F2400D1EEA1 /* Model */,
 				E800392C28853AD500D1EEA1 /* Assets.xcassets */,
 				E800392E28853AD500D1EEA1 /* LaunchScreen.storyboard */,
 				E800393128853AD500D1EEA1 /* Info.plist */,
@@ -121,6 +124,14 @@
 				E800393B288542C700D1EEA1 /* NSLayoutConstraint.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E800394328858F2400D1EEA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E800394428858F3100D1EEA1 /* Graph.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		E800FAFD67A2D64D0CB197CF /* Frameworks */ = {
@@ -263,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E800394528858F3100D1EEA1 /* Graph.swift in Sources */,
 				E800393E2885564800D1EEA1 /* MainViewModel.swift in Sources */,
 				E800392828853AD100D1EEA1 /* MainViewController.swift in Sources */,
 				E8F3DF182887F79F00E8BF61 /* ViewModelType.swift in Sources */,
