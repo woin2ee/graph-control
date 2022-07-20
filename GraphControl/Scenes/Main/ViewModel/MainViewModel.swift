@@ -29,11 +29,6 @@ final class MainViewModel: ViewModelType {
             .withLatestFrom(
                 observableGraph.asDriver(onErrorJustReturn: Graph.init(value: initialValue))
             )
-            .do( // Debug
-                onNext: { graph in
-                    print(graph.value)
-                }
-            )
             
         return Output.init(graph: graph)
     }
