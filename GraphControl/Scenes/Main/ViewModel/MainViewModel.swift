@@ -11,7 +11,6 @@ import RxCocoa
 
 final class MainViewModel: ViewModelType {
     
-    private let disposeBag = DisposeBag.init()
     private let initialValue: Double = 50
     
     struct Input {
