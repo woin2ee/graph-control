@@ -11,7 +11,4 @@ struct Graph {
     static let minValue: Float = 0.0
     static let maxValue: Float = 100.0
     var value: Float
-    var ratio: Float {
-        value / Graph.maxValue
-    }
 }

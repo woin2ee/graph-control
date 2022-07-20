@@ -33,17 +33,18 @@ final class MainViewController: UIViewController {
         let output = viewModel.transform(input: input)
         
         output.graph
+            .map { $0.value / Graph.maxValue }
             .drive(
                 onNext: {
-                    self.viewAnimation(ratio: CGFloat($0.ratio))
+                    self.updateConstraint(multiplier: CGFloat($0))
                 }
             )
             .disposed(by: disposeBag)
     }
     
-    private func viewAnimation(ratio: CGFloat) {
+    private func updateConstraint(multiplier: CGFloat) {
         UIView.animate(withDuration: 0.5) {
-            NSLayoutConstraint.updateMultiplier(of: &self.graphHeightConstraint, ratio)
+            NSLayoutConstraint.updateMultiplier(of: &self.graphHeightConstraint, multiplier)
             self.graphContainerView.layoutIfNeeded()
         }
     }
