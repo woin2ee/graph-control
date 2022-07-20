@@ -14,7 +14,7 @@ final class MainViewModel: ViewModelType {
     private let initialValue: Float = 50
     
     struct Input {
-        var didChangeValue: Driver<Float>
+        var changedValue: Driver<Float>
     }
     
     struct Output {
@@ -25,7 +25,7 @@ final class MainViewModel: ViewModelType {
     func transform(input: Input) -> Output {
         let graphRelay: BehaviorRelay<Graph> = .init(value: Graph.init(value: initialValue))
         
-        let graph = input.didChangeValue
+        let graph = input.changedValue
             .withLatestFrom(graphRelay.asDriver()) { (value, graph) -> Graph in
                 return Graph.init(value: value)
             }

@@ -6,32 +6,44 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 final class MainViewController: UIViewController {
     
     private var viewModel: MainViewModel = MainViewModel()
+    private let disposeBag = DisposeBag.init()
     
     @IBOutlet weak var sliderBar: UISlider! {
         didSet {
-            sliderBar.minimumValue = 0.00001
+            sliderBar.minimumValue = Float(Graph.minValue) + 0.00001
+            sliderBar.maximumValue = Float(Graph.maxValue)
         }
     }
-    
     @IBOutlet weak var graphContainerView: UIView!
     @IBOutlet weak var graphHeightConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bindViewModel()
     }
     
-    @IBAction func didChangeValueOfSliderBar(_ sender: UISlider) {
-        viewAnimation(value: CGFloat(sender.value))
-        print(self.graphHeightConstraint.multiplier)
+    private func bindViewModel() {
+        let input = MainViewModel.Input.init(changedValue: sliderBar.rx.value.asDriver())
+        let output = viewModel.transform(input: input)
+        
+        output.graph
+            .drive(
+                onNext: {
+                    self.viewAnimation(ratio: CGFloat($0.ratio))
+                }
+            )
+            .disposed(by: disposeBag)
     }
     
-    func viewAnimation(value: CGFloat) {
+    private func viewAnimation(ratio: CGFloat) {
         UIView.animate(withDuration: 0.5) {
-            NSLayoutConstraint.updateMultiplier(of: &self.graphHeightConstraint, value)
+            NSLayoutConstraint.updateMultiplier(of: &self.graphHeightConstraint, ratio)
             self.graphContainerView.layoutIfNeeded()
         }
     }
