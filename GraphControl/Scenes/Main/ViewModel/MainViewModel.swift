@@ -11,7 +11,7 @@ import RxCocoa
 
 final class MainViewModel: ViewModelType {
     
-    private let initialValue: Double = 50
+    private let initialValue: Float = 50
     
     struct Input {
         var didChangeValue: Driver<Float>
@@ -23,13 +23,13 @@ final class MainViewModel: ViewModelType {
     
     // Input 을 Output 으로 변환
     func transform(input: Input) -> Output {
-        let observableGraph: Observable<Graph> = .of(Graph.init(value: initialValue))
+        let graphRelay: BehaviorRelay<Graph> = .init(value: Graph.init(value: initialValue))
         
         let graph = input.didChangeValue
-            .withLatestFrom(
-                observableGraph.asDriver(onErrorJustReturn: Graph.init(value: initialValue))
-            )
-            
+            .withLatestFrom(graphRelay.asDriver()) { (value, graph) -> Graph in
+                return Graph.init(value: value)
+            }
+        
         return Output.init(graph: graph)
     }
 }
