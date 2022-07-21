@@ -23,10 +23,8 @@ final class MainViewModel: ViewModelType {
     
     // Input 을 Output 으로 변환
     func transform(input: Input) -> Output {
-        let graphRelay: BehaviorRelay<Graph> = .init(value: Graph.init(value: initialValue))
-        
         let graph = input.changedValue
-            .withLatestFrom(graphRelay.asDriver()) { (value, graph) -> Graph in
+            .map { value in
                 return Graph.init(value: value)
             }
         
