@@ -22,7 +22,19 @@ final class MainViewModel: ViewModelType {
     
     // Input 을 Output 으로 변환
     func transform(input: Input) -> Output {
-        let graph = input.changedValue
+        let graph = Driver
+            .merge(
+                input.changedValue,
+                input.typedText
+                    .compactMap { Float($0!) }
+                    .map {
+                        if $0 > 100 {
+                            return 100.0
+                        } else {
+                            return $0
+                        }
+                    }
+            )
             .map { value in
                 return Graph.init(value: value)
             }
