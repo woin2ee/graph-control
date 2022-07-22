@@ -14,10 +14,12 @@ final class MainViewController: UIViewController {
     private var viewModel: MainViewModel = MainViewModel()
     private let disposeBag = DisposeBag.init()
     
+    @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var sliderBar: UISlider! {
         didSet {
             sliderBar.minimumValue = Float(Graph.minValue) + 0.00001
             sliderBar.maximumValue = Float(Graph.maxValue)
+            sliderBar.value = 50
         }
     }
     @IBOutlet weak var graphContainerView: UIView!
@@ -29,7 +31,10 @@ final class MainViewController: UIViewController {
     }
     
     private func bindViewModel() {
-        let input = MainViewModel.Input.init(changedValue: sliderBar.rx.value.asDriver())
+        let input = MainViewModel.Input.init(
+            changedValue: sliderBar.rx.value.asDriver(),
+            typedText: textField.rx.text.asDriver()
+        )
         let output = viewModel.transform(input: input)
         
         output.graph
@@ -37,6 +42,22 @@ final class MainViewController: UIViewController {
             .drive(
                 onNext: {
                     self.updateConstraint(multiplier: CGFloat($0))
+                }
+            )
+            .disposed(by: disposeBag)
+        
+        output.graph
+            .drive(
+                onNext: {
+                    self.sliderBar.value = $0.value
+                }
+            )
+            .disposed(by: disposeBag)
+        
+        output.graph
+            .drive(
+                onNext: {
+                    self.textField.text = String(Int($0.value))
                 }
             )
             .disposed(by: disposeBag)

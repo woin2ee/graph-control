@@ -36,6 +36,11 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="zx5-KW-NYo">
                                 <rect key="frame" x="18" y="782" width="298" height="31"/>
                             </slider>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eL6-Nz-O2h">
+                                <rect key="frame" x="20" y="728" width="294" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -44,6 +49,9 @@
                             <constraint firstItem="zx5-KW-NYo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ANa-Gh-b7i"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zx5-KW-NYo" secondAttribute="bottom" constant="50" id="RFL-dy-YSy"/>
                             <constraint firstItem="IxY-L6-01X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="TOx-WQ-RHU"/>
+                            <constraint firstItem="eL6-Nz-O2h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Z9P-o1-fI8"/>
+                            <constraint firstItem="zx5-KW-NYo" firstAttribute="top" secondItem="eL6-Nz-O2h" secondAttribute="bottom" constant="20" id="ZEe-3p-JOG"/>
+                            <constraint firstItem="IxY-L6-01X" firstAttribute="leading" secondItem="eL6-Nz-O2h" secondAttribute="trailing" constant="20" id="d2b-Ve-WYz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IxY-L6-01X" secondAttribute="trailing" constant="20" id="lEe-ln-4eo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IxY-L6-01X" secondAttribute="bottom" constant="20" id="m9k-ld-r4U"/>
                         </constraints>
@@ -52,6 +60,7 @@
                         <outlet property="graphContainerView" destination="IxY-L6-01X" id="vG8-Cg-7KP"/>
                         <outlet property="graphHeightConstraint" destination="eZQ-AC-lX3" id="RE8-gK-51p"/>
                         <outlet property="sliderBar" destination="zx5-KW-NYo" id="pee-d8-hTO"/>
+                        <outlet property="textField" destination="eL6-Nz-O2h" id="jmJ-PN-blW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

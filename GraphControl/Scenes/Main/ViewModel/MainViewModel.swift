@@ -13,6 +13,7 @@ final class MainViewModel: ViewModelType {
     
     struct Input {
         var changedValue: Driver<Float>
+        var typedText: Driver<String?>
     }
     
     struct Output {
