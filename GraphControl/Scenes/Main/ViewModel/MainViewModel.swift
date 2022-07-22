@@ -11,8 +11,6 @@ import RxCocoa
 
 final class MainViewModel: ViewModelType {
     
-    private let initialValue: Float = 50
-    
     struct Input {
         var changedValue: Driver<Float>
     }
